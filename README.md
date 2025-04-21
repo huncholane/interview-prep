@@ -70,6 +70,7 @@ feedback. Waterfall takes longer and is best for fixed-scope well defined
 projects while agile is best for constantly evolving projects.
 
 2. What are design patterns and why are they important?
+
 Design patterns are well known methods for implementing application logic.
 For example if we want to make system wide settings, we would use the
 singleton pattern which has a table with one item in it.
@@ -79,6 +80,7 @@ My favorite programming paradigm is object oriented. Having functions for
 each object helps a lot to keep your code organized.
 
 4. Explain the concept of polymorphism with an example.
+
 Polymorphism is like inheritance but with function overrides. For example you
 would make an animal class and inherit this class for dog, cat, lion, etc.
 Then you would override the speak function for each animal and have it print
@@ -86,6 +88,7 @@ something different. This allows you to write the same code for each class
 and get the correct result.
 
 5. What is Big O notation and why is it important in algorithm analysis?
+
 Big O notation is the worst case analysis of time and space complexty for
 algorithms and functions based on input size. Improving the worst case time
 complexity is way more useful than improving the best case time complexity.
@@ -93,6 +96,7 @@ For example searching for an item in a sorted list will have a time
 complexity of O(n) while a binary search would take O(logn).
 
 6. How would you design a system to handle a large number of concurrent users?
+
 I would use a relational database like postgres and create an async api using
 python django, golang, rust axum, or asp dotnet core. I would handle database
 changes with migrations so I can test changes on my localhost and a
@@ -106,6 +110,7 @@ load balancing. This can be done with ALB and Fargate with AWS or Container
 Instances on Azure.
 
 7. Describe a bug you found in your work and how you fixed it?
+
 A recent bug we ran into was the password change flow with fedex emails. The
 emails were working on my local mailpit system so I ran the django shell with
 my code to send slightly different emails to my manager's fedex email. We
@@ -114,12 +119,14 @@ link and it triggered a spam filter for the fedex emailing system. After
 finding the problem I updated the production server.
 
 8. Explain the concept of inheritance in object oriented programming.
+
 Inheritance is the ability to have the same variables and functions for a
 child class. For example you can have coordinates x,y in one class and make a
 child class with z for a 3d object. This way you don't need to define the 3d
 object with x,y, and z. It can just inherit x and y from the 2d object.
 
 9. What are the four pillars of object-oriented programming?
+
 The 4 pillars of object-oriented programming include encapsulation,
 abstraction, inheritance, and polymorphism. Encapsulation is the use of
 getters and setters for classes to simplify updates on the object. For
@@ -135,7 +142,7 @@ override functions from the parent class. This is similar to abstraction,
 except you have a base function.
 
 10. Describe a time you had to work on a complex project and how you approached it
-I had to create a user system for a swift frontend app with admin tools. I
+  I had to create a user system for a swift frontend app with admin tools. I
 started out by choosing a tech stack; django, postgres, and aws ec2. Nice now
 we can parse massive pdf files to json objects and save them, but this is
 extremely slow, so I upgraded the parsing tool to a rust program. Ok now we
@@ -157,17 +164,15 @@ in the cloud without bogging down servers.
 ## Behavioral Interview Questions
 
 1. Why do you want to work for X company?
-
-- I really miss the in person collaboration of on site teams and want to be
-located in Reno.
-
+  I really miss the in person collaboration of on site teams and want to be
+  located in Reno.
 2. Why do you want to leave your current/last company?
 
-- I want to be part of a bigger team.
+  I want to be part of a bigger team.
 
 3. What are you looking for in your next role?
 
-- I'm looking to grow myself along with others.
+I'm looking to grow myself along with others.
 
 4. Tell me about a time when you had a conflict with a co-worker.
 5. Tell me about a time in which you had a conflict and needed to influence somebody else.
