@@ -62,7 +62,8 @@
 ## Top 10 Tech Interview Questions
 
 1. Explain the difference between Agile and Waterfall development methodologies.
-Waterfall is a step by step system with 4 phases; design, development,
+
+Waterfall is a step by step system with 5 phases; design, development,
 testing, deployment. There is no going back once a phase is done. For example
 once the design is created, the team must start development. Agile is a more
 flexible process where work is done in short sprints with continuous
@@ -166,8 +167,8 @@ in the cloud without bogging down servers.
 1. Why do you want to work for X company?
   I really miss the in person collaboration of on site teams and want to be
   located in Reno.
-2. Why do you want to leave your current/last company?
 
+2. Why do you want to leave your current/last company?
   I want to be part of a bigger team.
 
 3. What are you looking for in your next role?
