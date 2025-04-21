@@ -63,113 +63,117 @@
 
 1. Explain the difference between Agile and Waterfall development methodologies.
 
-Waterfall is a step by step system with 5 phases; design, development,
-testing, deployment. There is no going back once a phase is done. For example
-once the design is created, the team must start development. Agile is a more
-flexible process where work is done in short sprints with continuous
-feedback. Waterfall takes longer and is best for fixed-scope well defined
-projects while agile is best for constantly evolving projects.
+>Waterfall is a step by step system with 5 phases; design, development,
+>testing, deployment. There is no going back once a phase is done. For example
+>once the design is created, the team must start development. Agile is a more
+>flexible process where work is done in short sprints with continuous
+>feedback. Waterfall takes longer and is best for fixed-scope well defined
+>projects while agile is best for constantly evolving projects.
 
 2. What are design patterns and why are they important?
 
-Design patterns are well known methods for implementing application logic.
-For example if we want to make system wide settings, we would use the
-singleton pattern which has a table with one item in it.
+>Design patterns are well known methods for implementing application logic.
+>For example if we want to make system wide settings, we would use the
+>singleton pattern which has a table with one item in it.
 
 3. Describe your preferred programming paradigm and why you chose it
-My favorite programming paradigm is object oriented. Having functions for
-each object helps a lot to keep your code organized.
+
+>My favorite programming paradigm is object oriented. Having functions for
+>each object helps a lot to keep your code organized.
 
 4. Explain the concept of polymorphism with an example.
 
-Polymorphism is like inheritance but with function overrides. For example you
-would make an animal class and inherit this class for dog, cat, lion, etc.
-Then you would override the speak function for each animal and have it print
-something different. This allows you to write the same code for each class
-and get the correct result.
+>Polymorphism is like inheritance but with function overrides. For example you
+>would make an animal class and inherit this class for dog, cat, lion, etc.
+>Then you would override the speak function for each animal and have it print
+>something different. This allows you to write the same code for each class
+>and get the correct result.
 
 5. What is Big O notation and why is it important in algorithm analysis?
 
-Big O notation is the worst case analysis of time and space complexty for
-algorithms and functions based on input size. Improving the worst case time
-complexity is way more useful than improving the best case time complexity.
-For example searching for an item in a sorted list will have a time
-complexity of O(n) while a binary search would take O(logn).
+>Big O notation is the worst case analysis of time and space complexty for
+>algorithms and functions based on input size. Improving the worst case time
+>complexity is way more useful than improving the best case time complexity.
+>For example searching for an item in a sorted list will have a time
+>complexity of O(n) while a binary search would take O(logn).
 
 6. How would you design a system to handle a large number of concurrent users?
 
-I would use a relational database like postgres and create an async api using
-python django, golang, rust axum, or asp dotnet core. I would handle database
-changes with migrations so I can test changes on my localhost and a
-development server so I can apply the migrations after testing and know it
-will all work immediately. I would use reliable cloud architecture with AWS
-or Azure to handle user auth and attach related data to the users in my
-postgres instance. Along with this I would use a caching system like redis to
-make api calls faster and put less pressure on the relational database.
-Another important aspect to our large project is to use auto scaling with
-load balancing. This can be done with ALB and Fargate with AWS or Container
-Instances on Azure.
+>I would use a relational database like postgres and create an async api using
+>python django, golang, rust axum, or asp dotnet core. I would handle database
+>changes with migrations so I can test changes on my localhost and a
+>development server so I can apply the migrations after testing and know it
+>will all work immediately. I would use reliable cloud architecture with AWS
+>or Azure to handle user auth and attach related data to the users in my
+>postgres instance. Along with this I would use a caching system like redis to
+>make api calls faster and put less pressure on the relational database.
+>Another important aspect to our large project is to use auto scaling with
+>load balancing. This can be done with ALB and Fargate with AWS or Container
+>Instances on Azure.
 
 7. Describe a bug you found in your work and how you fixed it?
 
-A recent bug we ran into was the password change flow with fedex emails. The
-emails were working on my local mailpit system so I ran the django shell with
-my code to send slightly different emails to my manager's fedex email. We
-found the issue was having too many query parameters in the reset password
-link and it triggered a spam filter for the fedex emailing system. After
-finding the problem I updated the production server.
+>A recent bug we ran into was the password change flow with fedex emails. The
+>emails were working on my local mailpit system so I ran the django shell with
+>my code to send slightly different emails to my manager's fedex email. We
+>found the issue was having too many query parameters in the reset password
+>link and it triggered a spam filter for the fedex emailing system. After
+>finding the problem I updated the production server.
 
 8. Explain the concept of inheritance in object oriented programming.
 
-Inheritance is the ability to have the same variables and functions for a
-child class. For example you can have coordinates x,y in one class and make a
-child class with z for a 3d object. This way you don't need to define the 3d
-object with x,y, and z. It can just inherit x and y from the 2d object.
+>Inheritance is the ability to have the same variables and functions for a
+>child class. For example you can have coordinates x,y in one class and make a
+>child class with z for a 3d object. This way you don't need to define the 3d
+>object with x,y, and z. It can just inherit x and y from the 2d object.
 
 9. What are the four pillars of object-oriented programming?
 
-The 4 pillars of object-oriented programming include encapsulation,
-abstraction, inheritance, and polymorphism. Encapsulation is the use of
-getters and setters for classes to simplify updates on the object. For
-example you might want to update the database with last updated for every
-change. For example get might need to update a last accessed timestamp and
-set might need to update a last updated timestamp. Abstraction means to
-define functions without having them do anything yet. For example a heap
-always needs push and pop functions. You can make an abstraction for compare
-since it's not always clear what to compare. In golang, you build a struct
-that implements and interface to do this. Inheritance is the ability to reuse
-functions and variables from a parent class. Polymorphism is the ability to
-override functions from the parent class. This is similar to abstraction,
-except you have a base function.
+>The 4 pillars of object-oriented programming include encapsulation,
+>abstraction, inheritance, and polymorphism. Encapsulation is the use of
+>getters and setters for classes to simplify updates on the object. For
+>example you might want to update the database with last updated for every
+>change. For example get might need to update a last accessed timestamp and
+>set might need to update a last updated timestamp. Abstraction means to
+>define functions without having them do anything yet. For example a heap
+>always needs push and pop functions. You can make an abstraction for compare
+>since it's not always clear what to compare. In golang, you build a struct
+>that implements and interface to do this. Inheritance is the ability to reuse
+>functions and variables from a parent class. Polymorphism is the ability to
+>override functions from the parent class. This is similar to abstraction,
+>except you have a base function.
 
 10. Describe a time you had to work on a complex project and how you approached it
-  I had to create a user system for a swift frontend app with admin tools. I
-started out by choosing a tech stack; django, postgres, and aws ec2. Nice now
-we can parse massive pdf files to json objects and save them, but this is
-extremely slow, so I upgraded the parsing tool to a rust program. Ok now we
-have the basics but we notice problems that are hard to solve, so I made a
-logging system that captures logs for each request. Nice, now we have run
-into a new problem. The database isn't strong enough for this log
-integration, so we started using RDS to decrease the server load. Awesome,
-now let's figure out how to increase the speed for static files using s3. The
-solution in this case is to create an oidc server and integrate with aws
-cognito. I've learned a ton from this project. Now that I am more experienced
-with hands on problem solving with application growth, I would use more cloud
-services like aws cognito or azure directories to put the user base in a
-managed cloud service that integrates better with things like s3 or azure
-blob storage. Along with this, I would make more use of serverless functions
-and kubernetes/fargate/container instances. Another improvement I would make
-is to use code commit so that programs can be built on specific architectures
-in the cloud without bogging down servers.
+
+>I had to create a user system for a swift frontend app with admin tools. I
+>started out by choosing a tech stack; django, postgres, and aws ec2. Nice now
+>we can parse massive pdf files to json objects and save them, but this is
+>extremely slow, so I upgraded the parsing tool to a rust program. Ok now we
+>have the basics but we notice problems that are hard to solve, so I made a
+>logging system that captures logs for each request. Nice, now we have run
+>into a new problem. The database isn't strong enough for this log
+>integration, so we started using RDS to decrease the server load. Awesome,
+>now let's figure out how to increase the speed for static files using s3. The
+>solution in this case is to create an oidc server and integrate with aws
+>cognito. I've learned a ton from this project. Now that I am more experienced
+>with hands on problem solving with application growth, I would use more cloud
+>services like aws cognito or azure directories to put the user base in a
+>managed cloud service that integrates better with things like s3 or azure
+>blob storage. Along with this, I would make more use of serverless functions
+>and kubernetes/fargate/container instances. Another improvement I would make
+>is to use code commit so that programs can be built on specific architectures
+>in the cloud without bogging down servers.
 
 ## Behavioral Interview Questions
 
 1. Why do you want to work for X company?
-  I really miss the in person collaboration of on site teams and want to be
-  located in Reno.
+
+>I really miss the in person collaboration of on site teams and want to be
+>located in Reno.
 
 2. Why do you want to leave your current/last company?
-  I want to be part of a bigger team.
+
+>I want to be part of a bigger team.
 
 3. What are you looking for in your next role?
 
