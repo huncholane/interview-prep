@@ -18,45 +18,74 @@
 - Top 10 technical interview questions
   - Rapid fire measurable responses replacing numbers with percents
 
-## Interviewers
+## ZLINE Specific
 
-- Sowmya Kudva - Software Engineer
+### Big topics
 
-  - **Senior Software Engineer at Tesla** leading full stack development to
-    improve factory software and production efficiency
-  - Proficient in **Angular**, **TypeScript**, and **Golang** for building
-    modern UIs and robust REST APIs
-  - Delivered a **unified design library integration**, enhancing front-end
-    consistency and innovation
-  - **Redesigned user interfaces** to improve usability and support
-    high-quality manufacturing workflows
-  - Collaborated with cross-functional teams to build scalable, reliable
-    software aligned with Tesla’s mission
-  - Passionate about **pushing technical boundaries** to drive impact in the
-    automotive industry
+#### Code Review
 
-- Loren Parvin - Salesforce Developer
+- Optimizations in space/time complexity
+- Catch potential bugs
+- Enhance code reusability
 
-  - **Salesforce Developer and Administrator** with expertise in process
-    automation, platform integration, and system optimization
-  - Strong foundation in **Computer Science and Engineering** with a passion
-    for solving complex, high-impact problems
-  - Experienced in both **declarative tools** and **custom code development**
-    within the Salesforce ecosystem
-  - Skilled in **system administration**, **technical troubleshooting**, and
-    platform scalability
-  - Blend of **technical proficiency** and **soft skills**, including
-    collaboration, creativity, and adaptability
-  - Passionate team leader who enjoys mentoring and sharing knowledge with
-    others
-  - Committed to making a positive impact in every role, both professionally
-    and personally
-  - Open to **networking**, **sharing ideas**, and **exploring new
-    opportunities**
+#### Solution Mapping
 
-- Tim - Director of IT & Development
+-
 
-## Common Interview Questions
+#### Bigger Picture Design
+
+- Utilize the right cloud services for scalability
+- Choose the right frameworks and languages
+- Optimize database design and queries
+
+#### Mock Pull Requests
+
+- Spot edge cases
+- Add comments
+
+#### Integration with other Platforms
+
+- CI/CD tools like github actions, AWS code commit,
+
+### Interviewers
+
+#### Sowmya Kudva - Software Engineer
+
+- **Senior Software Engineer at Tesla** leading full stack development to
+  improve factory software and production efficiency
+- Proficient in **Angular**, **TypeScript**, and **Golang** for building
+  modern UIs and robust REST APIs
+- Delivered a **unified design library integration**, enhancing front-end
+  consistency and innovation
+- **Redesigned user interfaces** to improve usability and support
+  high-quality manufacturing workflows
+- Collaborated with cross-functional teams to build scalable, reliable
+  software aligned with Tesla’s mission
+- Passionate about **pushing technical boundaries** to drive impact in the
+  automotive industry
+
+#### Loren Parvin - Salesforce Developer
+
+- **Salesforce Developer and Administrator** with expertise in process
+  automation, platform integration, and system optimization
+- Strong foundation in **Computer Science and Engineering** with a passion
+  for solving complex, high-impact problems
+- Experienced in both **declarative tools** and **custom code development**
+  within the Salesforce ecosystem
+- Skilled in **system administration**, **technical troubleshooting**, and
+  platform scalability
+- Blend of **technical proficiency** and **soft skills**, including
+  collaboration, creativity, and adaptability
+- Passionate team leader who enjoys mentoring and sharing knowledge with
+  others
+- Committed to making a positive impact in every role, both professionally
+  and personally
+- Open to **networking**, **sharing ideas**, and **exploring new
+  opportunities**
+
+#### Tim - Director of IT & Development
+
+## Interview Questions
 
 ### Top 10 Tech Interview Questions
 
