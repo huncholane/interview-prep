@@ -36,43 +36,43 @@
 #### Solution Mapping
 
 - **Break features into clear tech layers**  
-  e.g., user submits form → frontend sends request to `/api/profile` → backend validates input → DB writes to `users` table.
+  _Example: user submits form → frontend sends request to `/api/profile` → backend validates input → DB writes to `users` table._
 
 - **Identify impacted areas**  
-  e.g., updating the billing system affects invoicing, notifications, and admin reporting.
+  _Example: updating the billing system affects invoicing, notifications, and admin reporting._
 
 - **Define ownership and responsibilities**  
-  e.g., frontend handles form validation, backend owns persistence, DevOps handles deployments.
+  _Example: frontend handles form validation, backend owns persistence, DevOps handles deployments._
 
 #### Bigger Picture Design
 
 - **Use scalable cloud services**  
-  e.g., replaced EC2 with AWS Fargate for autoscaling container workloads.
+  _Example: replaced EC2 with AWS Fargate for autoscaling container workloads._
 
 - **Choose frameworks and languages intentionally**  
-  e.g., used Django for rapid backend development, and Next.js for fast server-side rendering.
+  _Example: used Django for rapid backend development, and Next.js for fast server-side rendering._
 
 - **Optimize database structure and queries**  
-  e.g., added indexes to the `orders` table to reduce dashboard load times from 2s to 200ms.
+  _Example: added indexes to the `orders` table to reduce dashboard load times from 2s to 200ms._
 
 #### Mock Pull Requests
 
 - **Spot edge cases and logic gaps**  
-  e.g., what happens if a required field is missing in the payload?
+  _Example: what happens if a required field is missing in the payload?_
 
 - **Provide clear and actionable comments**  
-  e.g., "Consider renaming this variable to better reflect its purpose."
+  _Example: "Consider renaming this variable to better reflect its purpose."_
 
 #### Integration with other Platforms
 
 - **CI/CD integration**  
-  e.g., used GitHub Actions to lint, test, and deploy pull requests automatically.
+  _Example: used GitHub Actions to lint, test, and deploy pull requests automatically._
 
 - **Cloud platform sync**  
-  e.g., connected Slack via webhook to notify devs when production deploys complete.
+  _Example: connected Slack via webhook to notify devs when production deploys complete._
 
 - **Version control hooks**  
-  e.g., pre-commit hooks enforce formatting and static checks before pushing.
+  _Example: pre-commit hooks enforce formatting and static checks before pushing._
 
 ### Interviewers
 
