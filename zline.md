@@ -24,28 +24,55 @@
 
 #### Code Review
 
-- Optimizations in space/time complexity
-- Catch potential bugs
-- Enhance code reusability
+- **Optimize space/time complexity**  
+  _Example: Replaced nested for-loops with hash map lookups for O(n) performance_
+
+- **Catch potential bugs**  
+  _Example: Added nil checks for external API responses to prevent panics_
+
+- **Improve code reusability**  
+  _Example: Extracted validation logic into a shared utility function used across services_
 
 #### Solution Mapping
 
--
+- **Break features into clear tech layers**  
+  e.g., user submits form → frontend sends request to `/api/profile` → backend validates input → DB writes to `users` table.
+
+- **Identify impacted areas**  
+  e.g., updating the billing system affects invoicing, notifications, and admin reporting.
+
+- **Define ownership and responsibilities**  
+  e.g., frontend handles form validation, backend owns persistence, DevOps handles deployments.
 
 #### Bigger Picture Design
 
-- Utilize the right cloud services for scalability
-- Choose the right frameworks and languages
-- Optimize database design and queries
+- **Use scalable cloud services**  
+  e.g., replaced EC2 with AWS Fargate for autoscaling container workloads.
+
+- **Choose frameworks and languages intentionally**  
+  e.g., used Django for rapid backend development, and Next.js for fast server-side rendering.
+
+- **Optimize database structure and queries**  
+  e.g., added indexes to the `orders` table to reduce dashboard load times from 2s to 200ms.
 
 #### Mock Pull Requests
 
-- Spot edge cases
-- Add comments
+- **Spot edge cases and logic gaps**  
+  e.g., what happens if a required field is missing in the payload?
+
+- **Provide clear and actionable comments**  
+  e.g., "Consider renaming this variable to better reflect its purpose."
 
 #### Integration with other Platforms
 
-- CI/CD tools like github actions, AWS code commit,
+- **CI/CD integration**  
+  e.g., used GitHub Actions to lint, test, and deploy pull requests automatically.
+
+- **Cloud platform sync**  
+  e.g., connected Slack via webhook to notify devs when production deploys complete.
+
+- **Version control hooks**  
+  e.g., pre-commit hooks enforce formatting and static checks before pushing.
 
 ### Interviewers
 
