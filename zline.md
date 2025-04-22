@@ -172,8 +172,8 @@
 
 1.  Why do you want to work for X company?
 
-> I really miss the in person collaboration of on site teams and want to
-> be > located in Reno.
+I really miss the in person collaboration of on site teams and want to
+be located in Reno.
 
 2.  Why do you want to leave your current/last company?
 
